@@ -1,0 +1,80 @@
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 3rem;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.footer_links h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.footer_links ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.footer_links li a {
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.footer_links li a:hover {
+  opacity: 1;
+}
+.footer_bottom {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  /* margin-block: 2rem; */
+}
+footer,.footer_links li a,.footer_bottom{
+  background-color: black;
+  color: aliceblue;
+}
+
+/* 1. Set full viewport height parameters on the body */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 2. Stretch the main tag to push the footer down completely */
+main {
+  flex: 1 0 auto;
+}
+
+/* 3. Correct footer background styling */
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Changed to white border so it shows on black */
+  padding-top: 3rem;
+  background-color: black;
+  color: aliceblue;
+  flex-shrink: 0;
+  padding-bottom: 2rem; /* Adds clean spacing below the copyright text */
+}
+
+.footer_links li a {
+  color: aliceblue;
+}
+
+.footer_bottom {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5); /* Changed from black opacity to white opacity */
+}

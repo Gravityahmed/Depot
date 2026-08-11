@@ -1,14 +1,12 @@
 .banner {
-  max-height: 90vh;
+  height: 80vh; /* ← change max-height to height, adjust % to taste */
 }
 .banner .container {
   height: 100%;
-  z-index: 2;
 }
 .banner .banner_img {
   height: 100%;
-  /* background-color: var(--gray-color); */
-  background-color: brown;
+  background-color: var(--gray-color);
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -24,35 +22,45 @@
   font-size: 200;
   opacity: 0.7;
 }
+.banner .banner_img .source {
+  height: 100%;
+  flex: 0 0 55%;
+  max-width: 55%;
+}
+
 .banner .banner_img .source img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   display: block;
+  max-height: 150rem;
+  max-width: 150rem;
 }
-.banner_pagination{
+.banner_pagination {
   position: absolute;
   width: 13rem;
   height: auto;
   top: 50%;
   left: -3rem;
   flex-direction: column;
-    gap: 5rem;
+  gap: 5rem;
 }
-.banner_pagination_item{
+.banner_pagination_item {
   display: flex;
   align-items: center;
-  gap: .5rem;
-  padding: .3rem;
+  gap: 0.5rem;
+  padding: 0.3rem;
 }
 
-.banner_pagination_line{
+.banner_pagination_line {
   width: 7rem;
-  height: .2rem;
+  height: 0.2rem;
   border-radius: 1rem;
   background-color: var(--main-color);
 }
 
-.banner_pagination_item:not(#first){
+.banner_pagination_item:not(#first) {
   opacity: 50%;
   width: 3.4rem;
 }
@@ -60,4 +68,3 @@
   opacity: 100%;
   z-index: 2;
 } */
-

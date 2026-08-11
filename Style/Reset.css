@@ -17,6 +17,10 @@ a {
 ul {
   list-style: none;
 }
-span{
+span {
   font-size: small;
 }
+.py {
+  padding-block: 2rem;
+}
+

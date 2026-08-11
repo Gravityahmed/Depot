@@ -32,20 +32,24 @@
   display: flex;
   gap: 1.5rem;
 }
-.navbar_menus, .navbar_tools{
+.navbar_menus,
+.navbar_tools {
   font-size: smaller;
-    cursor: pointer;
+  cursor: pointer;
 }
-.home{
-  opacity: .5;
+.home {
+  opacity: 1;
 }
-.container ul li a{
+.navbar_menus ul:not(:first-child) {
+  opacity: 0.5;
+}
+.container ul li a {
   transition: var(--transition);
 }
-.navbar_tools div{
-     transition: var(--transition);
+.navbar_tools div {
+  transition: var(--transition);
 }
-.container ul li a:hover, .navbar_tools div:hover{
-  opacity: .5;
+.container ul li a:hover,
+.navbar_tools div:hover {
+  opacity: 1;
 }
-

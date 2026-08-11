@@ -3,5 +3,7 @@
 @import "./GlobalStyle.css";
 @import "./Navbar.css";
 @import "./banner.css";
+@import "./Product.css";
 @import "./Footer.css";
 @import "./Mediaquery.css";
+@import "./single_product.css";
