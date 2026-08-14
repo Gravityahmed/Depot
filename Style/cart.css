@@ -98,7 +98,8 @@
 }
 .change_address i {
   font-size: 1.3rem;
-  padding-bottom: 1rem;/
+  padding-bottom: 1rem;
+  cursor: pointer;
 }
 .total {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -202,8 +203,8 @@
   justify-content: center;
   align-items: center;
 }
-.cart_coupon_right h3{
-font-size: 1.2rem;
+.cart_coupon_right h3 {
+  font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
@@ -218,28 +219,27 @@ font-size: 1.2rem;
   gap: 3rem;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
-.cart_coupon_left h3{
+.cart_coupon_left h3 {
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   margin-right: 12rem;
   cursor: pointer;
 }
-.cart_coupon_left span{
+.cart_coupon_left span {
   margin-left: 1rem;
   font-size: larger;
 }
-.back_to_shop_btn{
+.back_to_shop_btn {
   width: 100%;
   font-size: 1.5rem;
   margin-top: 2rem;
-  opacity: .5;
+  opacity: 0.5;
 }
-.back_to_shop_btn i{
+.back_to_shop_btn i {
 }
-.back_to_shop_btn a{
+.back_to_shop_btn a {
   margin-left: 1rem;
- 
 }
 
 /* --- Quantity Selector Styles --- */
@@ -289,14 +289,14 @@ font-size: 1.2rem;
 }
 
 @media (max-width: 1024px) {
-  .cart_details_container_items{
+  .cart_details_container_items {
     flex-wrap: wrap;
   }
-  .cart_invoice, .cart_items{
+  .cart_invoice,
+  .cart_items {
     width: 100%;
   }
 }
-
 
 /* --- Cart Item Image Hover Effect --- */
 .cart_item_products_img img {
@@ -307,7 +307,7 @@ font-size: 1.2rem;
 }
 
 .cart_item_products_img img:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 /* --- Back to Shop Button Hover Effect --- */
