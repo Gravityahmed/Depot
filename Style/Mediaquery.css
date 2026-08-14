@@ -1,7 +1,6 @@
 /* ============================================================
-   RESPONSIVE BREAKPOINTS
-   1. Desktop-first base styles are in their own CSS files.
-   2. Breakpoints cascade down: 1280 → 1024 → 768 → 480 → 360
+   RESPONSIVE BREAKPOINTS & ENHANCEMENTS FOR ALL PAGES
+   (Home, Shop, Single Product, Cart)
    ============================================================ */
 
 /* ── Large tablet / small laptop (≤ 1280px) ─────────────────*/
@@ -93,6 +92,21 @@
     max-height: 55vw;
     object-fit: cover;
   }
+
+  /* Cart Page Layout */
+  .cart_details_container_items {
+    flex-wrap: wrap;
+  }
+  .cart_invoice, 
+  .cart_items {
+    width: 100%;
+  }
+
+  /* Single Product Page Layout */
+  .single_product_container {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 /* ── Tablet portrait (≤ 768px) ──────────────────────────────*/
@@ -102,16 +116,16 @@
     padding-inline: 1.5rem;
   }
   .Product_section_Links {
-    overflow-x: auto; /* allow horizontal scroll if needed */
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* hide scrollbar on Firefox */
+    scrollbar-width: none;
   }
   .Product_section_Links::-webkit-scrollbar {
-    display: none; /* hide scrollbar on Chrome/Safari */
+    display: none;
   }
   .Product_section_Links ul {
-    flex-wrap: nowrap; /* keep items on one line */
-    white-space: nowrap; /* prevent text from wrapping inside items */
+    flex-wrap: nowrap;
+    white-space: nowrap;
     gap: 1.5rem;
     font-size: 0.85rem;
   }
@@ -145,6 +159,44 @@
 
   .banner .banner_img .source img {
     max-height: 60vw;
+  }
+
+  /* Cart Items & Table Stack */
+  .cart_items_products {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  .cart_item_info {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .cart_item_quantity {
+    margin-left: 0;
+  }
+  .product_subtotal {
+    margin-inline: 0;
+  }
+  .cart_coupon {
+    flex-direction: column;
+  }
+  .cart_coupon_left,
+  .cart_coupon_right {
+    width: 100%;
+  }
+  .cart_coupon_left h3 {
+    margin-right: 0;
+  }
+
+  /* Single Product Image Gallery Alignment */
+  .single_product_container_img {
+    flex-direction: column-reverse;
+  }
+  .single_product_container_img_child {
+    flex-direction: row;
+    overflow-x: auto;
   }
 }
 
@@ -199,6 +251,15 @@
   .banner .banner_img .source img {
     max-height: 65vw;
   }
+
+  /* Cart Totals Adjustments */
+  .cart_invoice h3 {
+    font-size: 2rem;
+  }
+  .cart_invoice_details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 /* ── Small mobile (≤ 360px) ─────────────────────────────────*/
@@ -219,6 +280,7 @@
     font-size: 1.15rem;
   }
 }
+
 /* ============================================================
    FOOTER MEDIA QUERIES
    ============================================================ */
@@ -253,9 +315,9 @@
 /* ── Mobile (≤ 480px) ───────────────────────────────────────*/
 @media (max-width: 480px) {
   .footer_links {
-    grid-template-columns: 1fr; /* Stack into a single column on small screens */
+    grid-template-columns: 1fr;
     gap: 1.75rem;
-    text-align: center; /* Center footer content for mobile balance */
+    text-align: center;
   }
 
   .footer_links h3 {
